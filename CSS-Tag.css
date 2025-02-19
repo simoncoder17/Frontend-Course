@@ -1,0 +1,38 @@
+/* Rule for the body element */
+body {
+    background-color: #E0E0E2;
+}
+
+/* Rule for the h1 element */
+h1 {
+    color: #721817;
+}
+
+/* Rule for the h2 element */
+h2 {
+    color: #721817;
+}
+
+/* Rule for the center-text class */
+.center-text {
+    text-align: center;
+}
+
+/* Rule for the logo id */
+#logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Rule for span elements inside h2 */
+h2 > span {
+    color: #FA9F42;
+    font-size: 0.75em;
+}
+
+/* Rule for the copyright id */
+#copyright {
+    padding-top: 12px;
+    font-size: 0.75em;
+}
