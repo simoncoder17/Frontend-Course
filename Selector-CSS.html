@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Example</title>
+    <style>
+        /* Universal Selector */
+        * {
+            font-family: Verdana, sans-serif;
+        }
+
+        /* Element Selector */
+        h1 {
+            color: darkgreen;
+        }
+
+        /* Class Selector */
+        .highlight {
+            background-color: lightpink;
+            font-weight: bold;
+            padding: 5px;
+        }
+
+        /* ID Selector */
+        #special {
+            color: darkred;
+            font-size: 22px;
+            text-decoration: underline;
+        }
+
+        /* Grouping Selector */
+        h2, h3 {
+            text-align: left;
+            color: darkblue;
+        }
+
+        /* Descendant Selector */
+        section p {
+            color: teal;
+        }
+
+        /* Child Selector */
+        section > span {
+            color: darkorange;
+            font-style: italic;
+        }
+
+        /* Adjacent Sibling Selector */
+        h2 + p {
+            color: purple;
+            font-weight: bold;
+        }
+
+        /* General Sibling Selector */
+        h3 ~ p {
+            color: darkgoldenrod;
+        }
+
+        /* Attribute Selector */
+        input[type="email"] {
+            border: 2px solid green;
+            padding: 5px;
+        }
+
+        /* Hover Pseudo-Class */
+        button:hover {
+            background-color: lightgreen;
+            color: white;
+            cursor: pointer;
+        }
+
+        div:hover {
+            background-color: lightyellow;
+            border: 2px dashed brown;
+        }
+
+        a:hover {
+            color: blue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Selectors Demo</h1>
+
+    <p class="highlight">This paragraph demonstrates a class selector.</p>
+
+    <p id="special">This paragraph demonstrates an ID selector.</p>
+
+    <h2>Grouped Heading</h2>
+    <p>Adjacent sibling selector applied here.</p>
+
+    <section>
+        <p>Descendant selector: This is inside a section.</p>
+        <span>Child selector: This is a direct child of the section.</span>
+    </section>
+
+    <h3>Sibling Selectors Example</h3>
+    <p>This is a general sibling paragraph.</p>
+    <p>Another paragraph affected by general sibling selector.</p>
+
+    <form>
+        <label for="email">Email:</label>
+        <input type="email" id="email">
+    </form>
+
+    <button>Hover over this button!</button>
+
+    <div>Hover over this div!</div>
+
+    <a href="#">Hover over this link!</a>
+
+</body>
+</html>
