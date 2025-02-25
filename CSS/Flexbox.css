@@ -1,0 +1,58 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e3f2fd;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: #007bb5;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Flexbox Layout */
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 30px;
+}
+
+/* Box Styling */
+.box {
+    background-color: #ff9800;
+    color: white;
+    padding: 35px;
+    text-align: center;
+    border-radius: 10px;
+    width: 120px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Box 2 Specific Styling */
+.box:nth-child(2) {
+    background-color: #8e44ad;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #007bb5;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

@@ -1,0 +1,104 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Header Styling */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+/* Hover Box Styling */
+.hover-box {
+    width: 220px;
+    height: 220px;
+    background: linear-gradient(135deg, #ff7eb3, #ff758c);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    border-radius: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease-in-out;
+}
+
+/* Hover Effect */
+.hover-box:hover {
+    background: linear-gradient(135deg, #32cd32, #228B22); /* Gradient change */
+    transform: scale(1.15) rotate(5deg); /* Scale & slight rotation */
+    box-shadow: 0 10px 30px rgba(50, 205, 50, 0.6);
+}
+
+/* Glowing Effect */
+.hover-box::before {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    top: 50%;
+    left: 50%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 10%, transparent 70%);
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.4s ease-in-out;
+}
+
+.hover-box:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* Border Glow */
+.hover-box::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    top: 0;
+    left: 0;
+    border: 3px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.hover-box:hover::after {
+    border: 3px solid rgba(255, 255, 255, 0.7);
+}
+
+/* Text Animation */
+.hover-box:hover {
+    animation: floating 0.4s ease-in-out;
+}
+
+/* Floating Effect */
+@keyframes floating {
+    0% { transform: scale(1.15) rotate(5deg); }
+    50% { transform: scale(1.18) rotate(0deg); }
+    100% { transform: scale(1.15) rotate(5deg); }
+}
