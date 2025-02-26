@@ -1,0 +1,55 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Header Styling */
+header {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 100px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+header h1 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+/* Text Box Styling */
+.glow-text {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 15px 30px;
+    cursor: pointer;
+    text-align: center;
+    transition: text-shadow 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover Effect - Glowing Neon */
+.glow-text:hover {
+    text-shadow: 0 0 20px rgba(0, 255, 255, 0.8), 
+                 0 0 40px rgba(0, 255, 255, 0.6), 
+                 0 0 60px rgba(0, 255, 255, 0.4);
+    color: #00ffff; /* Change color on hover */
+    transform: scale(1.1);
+}
